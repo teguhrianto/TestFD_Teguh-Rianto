@@ -1,0 +1,23 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: $default-text;
+}
+
+*{
+    outline: none;
+}
+
+a{
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover, &:active{
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.container{
+    max-width: 1110px;
+}

@@ -1,0 +1,96 @@
+.header{
+    &__top{
+        .navbar{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f1f1f1;
+            background-color: $white;
+
+            .navbar-collapse{
+                align-items: flex-start;
+            }
+
+            .navbar-nav{
+                align-items: center;
+                .nav-item{
+                    margin-right: 25px;
+                    position: relative;
+                    .nav-link{
+                        padding: 0;
+                        font-size: 14px;
+                        color: $default-text;
+                        display: flex;
+                        align-items: center;
+                        i{
+                            margin-right: 15px;
+                            font-size: 16px;
+                        }
+
+                        &--member{
+                            i{
+                                font-size: 24px;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+
+                    &__news{
+                        display: flex;
+                        &__link{
+                            margin-right: 5px;
+                            font-size: 12px;
+                            color: $default-text;
+                            &:hover{
+                                color: $primary;
+                            }
+                        }
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom{
+        .navbar{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f1f1f1;
+            background-color: $white;
+
+            .navbar-brand{
+                padding: 0;
+                img{
+                    height: 52px;
+                    width: auto;
+                }
+            }
+
+            .navbar-nav{
+                .nav-item{
+                    margin-right: 30px;
+                    .nav-link{
+                        padding: 10px 0;
+                        color: $default-text;
+                        font-size: 16px;
+
+                        &:hover, &.active{
+                            color: $primary;
+                        }
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
