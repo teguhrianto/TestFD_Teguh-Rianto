@@ -1,6 +1,7 @@
 // Fonts
 @import '../fonts/roboto/roboto';
 @import '../fonts/montserrat/montserrat';
+@import '~@mdi/font/scss/materialdesignicons';
 
 // Variables
 @import './variables';
@@ -12,7 +13,9 @@
 @import './mixins';
 @import './typography';
 @import './button';
+@import './table';
 @import './global';
 @import './header';
+@import './features';
 @import './page-home';
 @import './utilities';

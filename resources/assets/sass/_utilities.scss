@@ -1,3 +1,15 @@
 .border-bottom{
     border-color: #f1f1f1 !important;
 }
+
+.font{
+    &-montserrat{
+        font-family: $font-montserrat !important;
+    }
+}
+
+.text{
+    &-primary{
+        color: $primary !important;
+    }
+}

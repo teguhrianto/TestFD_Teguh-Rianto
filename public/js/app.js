@@ -1899,6 +1899,89 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/components/PackagesHosting.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/components/PackagesHosting.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'PackageHosting',
+  data: function data() {
+    return {
+      packages: null,
+      loading: true,
+      errored: false
+    };
+  },
+  filters: {
+    truncate: function truncate(value, from, to) {
+      return value.substring(from, to);
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('../data/packages_hosting.json').then(function (response) {
+      _this.packages = response.data;
+      console.log(response.data);
+    })["catch"](function (error) {
+      console.log(error);
+      _this.errored = true;
+    })["finally"](function () {
+      return _this.loading = false;
+    });
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -37269,94 +37352,159 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "packages" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "title" }, [
-          _c("h3", [_vm._v("Paket Hosting Singapura yang Tepat")]),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Diskon 40% + Domain dan SSL Gratis untuk Anda")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row no-gutters" }, [
-          _c("div", { staticClass: "col-lg-3 col-md-6" }, [
-            _c("div", { staticClass: "card packages__card" }, [
-              _c("div", { staticClass: "packages__card__name" }, [
-                _c("h4", [_vm._v("Bayi")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "packages__card__price" }, [
-                _c("div", { staticClass: "packages__card__price--discount" }, [
-                  _c("h6", [_vm._v("Rp 19.900")])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "packages__card__price--tag" }, [
-                  _c("h4", [
-                    _c("sup", [_vm._v("Rp")]),
-                    _vm._v("14"),
-                    _c("sup", [_c("strong", [_vm._v(".900")]), _vm._v("/ bln")])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "packages__card__members" }, [
-                _c("p", [
-                  _c("strong", [_vm._v("938")]),
-                  _vm._v(" Pengguna Terdaftar\n                        ")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "packages__card__values" }, [
-                _c("p", [_c("strong", [_vm._v("0.5X RESOURCE POWER")])]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [_vm._v("500 MB")]),
-                  _vm._v(" Disk Space")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [_vm._v("Unlimited")]),
-                  _vm._v(" Bandwith")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [_vm._v("Unlimited")]),
-                  _vm._v(" Databases")
-                ]),
-                _vm._v(" "),
-                _c("p", [_c("strong", [_vm._v("1")]), _vm._v(" Domain")]),
-                _vm._v(" "),
-                _c("p", [_c("strong", [_vm._v("Instant")]), _vm._v(" Backup")]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [_vm._v("Unlimited SSL")]),
-                  _vm._v(" Gratis Selamanya")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "packages__card__action" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-outline-dark",
-                      attrs: { href: "javascript:void(0);" }
-                    },
-                    [_vm._v("Pilih Sekarang")]
-                  )
-                ])
-              ])
-            ])
+  return _c("div", [
+    _vm.errored
+      ? _c("div", { staticClass: "alert alert-warning text-center" }, [
+          _c("p", { staticClass: "mb-0" }, [
+            _vm._v(
+              "We're sorry, we're not able to retrieve this information at the moment, please try back later"
+            )
           ])
         ])
-      ])
-    ])
-  }
-]
+      : _c(
+          "div",
+          { staticClass: "row no-gutters justify-content-center" },
+          [
+            _vm.loading
+              ? _c("div", { staticClass: "col-md-12 text-center" }, [
+                  _c("p", [_vm._v("Fetching Data...")])
+                ])
+              : _vm._l(_vm.packages, function(item, index) {
+                  return _c(
+                    "div",
+                    { key: index, staticClass: "col-lg-3 col-md-6" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card packages__card",
+                          class: {
+                            "packages__card--best-seller":
+                              item.bestSeller == true
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "packages__card__name" }, [
+                            _c("h4", [_vm._v(_vm._s(item.name))])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "packages__card__price" }, [
+                            _c(
+                              "div",
+                              { staticClass: "packages__card__price--normal" },
+                              [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(item.price.currency) +
+                                      " " +
+                                      _vm._s(item.price.normal)
+                                  )
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "packages__card__price--discounted"
+                              },
+                              [
+                                _c("h4", [
+                                  _c("sup", [
+                                    _vm._v(_vm._s(item.price.currency))
+                                  ]),
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm._f("truncate")(
+                                        item.price.discounted,
+                                        0,
+                                        2
+                                      )
+                                    )
+                                  ),
+                                  _c("sup", [
+                                    _c("strong", [
+                                      _vm._v(
+                                        _vm._s(
+                                          _vm._f("truncate")(
+                                            item.price.discounted,
+                                            2,
+                                            6
+                                          )
+                                        )
+                                      )
+                                    ]),
+                                    _vm._v("/ " + _vm._s(item.price.reccuring))
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "packages__card__registrants" },
+                            [
+                              _c("p", [
+                                _c("strong", [
+                                  _vm._v(_vm._s(item.numOfRegistrants))
+                                ]),
+                                _vm._v(
+                                  " Pengguna Terdaftar\n                    "
+                                )
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "packages__card__values" },
+                            [
+                              _vm._l(item.features, function(value, index) {
+                                return _c("p", {
+                                  key: index,
+                                  domProps: { innerHTML: _vm._s(value) }
+                                })
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "packages__card__action" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "btn",
+                                      class:
+                                        item.bestSeller == true
+                                          ? "btn-primary"
+                                          : "btn-outline-dark",
+                                      attrs: { href: "javascript:void(0);" }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                            " +
+                                          _vm._s(item.actionLabel) +
+                                          "\n                        "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              )
+                            ],
+                            2
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                })
+          ],
+          2
+        )
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -49606,21 +49754,24 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!**************************************************!*\
   !*** ./resources/components/PackagesHosting.vue ***!
   \**************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PackagesHosting_vue_vue_type_template_id_81261ba8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PackagesHosting.vue?vue&type=template&id=81261ba8& */ "./resources/components/PackagesHosting.vue?vue&type=template&id=81261ba8&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _PackagesHosting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PackagesHosting.vue?vue&type=script&lang=js& */ "./resources/components/PackagesHosting.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _PackagesHosting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _PackagesHosting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PackagesHosting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _PackagesHosting_vue_vue_type_template_id_81261ba8___WEBPACK_IMPORTED_MODULE_0__["render"],
   _PackagesHosting_vue_vue_type_template_id_81261ba8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -49634,6 +49785,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/components/PackagesHosting.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/components/PackagesHosting.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/components/PackagesHosting.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PackagesHosting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./PackagesHosting.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/components/PackagesHosting.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PackagesHosting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

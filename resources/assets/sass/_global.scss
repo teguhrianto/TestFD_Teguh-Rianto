@@ -1,8 +1,9 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     font-size: 14px;
     color: $default-text;
     background-color: $body-bg;
+    font-weight: 300;
 }
 
 *{
@@ -19,6 +20,16 @@ a{
     }
 }
 
+p{
+    strong{
+        font-weight: 500;
+    }
+
+    small{
+        font-size: 12px;
+    }
+}
+
 .container{
     max-width: 1110px;
 }
@@ -26,6 +37,19 @@ a{
 section{
     padding: 50px 0;
     position: relative;
+
+    &.separator{
+        &:after{
+            position: absolute;
+            content: "";
+            width: 90px;
+            height: 5px;
+            background-color: #f1f1f1;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 
@@ -42,7 +66,11 @@ section{
     h4{
         font-family: $font-montserrat;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 300;
         margin-bottom: 0;
     }
+}
+
+.mdi{
+    line-height: 1;
 }

@@ -5,4 +5,17 @@
     font-size: 14px;
     font-family: $font-montserrat;
     font-weight: 600;
+
+    &.btn-lg{
+        font-size: 18px;
+    }
+
+    &.btn-icon{
+        display: inline-flex;
+        align-items: center;
+        .mdi{
+            font-size: 30px;
+            margin-right: 25px;
+        }
+    }
 }

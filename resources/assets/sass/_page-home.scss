@@ -5,9 +5,10 @@
             margin-bottom: 20px;
         }
         h2{
-            font-weight: 400;
-            font-size: 34px;
+            font-weight: 300;
+            font-size: 30px;
             margin-bottom: 34px;
+            font-family: $font-montserrat;
         }
 
         h6{
@@ -15,7 +16,7 @@
             display: flex;
             align-items: center;
 
-            i{
+            i, .mdi{
                 margin-right: 10px;
                 font-size: 20px;
             }
@@ -23,25 +24,8 @@
     }
 }
 
-.features{
-    &__item{
-        text-align: center;
-        &__img{
-            height: 160px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img{
-                max-width: 100%;
-                height: auto;
-            }
-        }
-    }
-}
-
 .packages{
+    $self: &;
     .title{
         margin-bottom: 70px;
         h3{
@@ -55,6 +39,7 @@
     &__card{
         border-color: #f1f1f1;
         text-align: center;
+        transition: all 0.3s ease-in-out;
 
         &__name{
             padding: 10px 15px;
@@ -70,7 +55,7 @@
         &__price{
             padding: 15px;
             border-bottom: 1px solid #f1f1f1;
-            &--discount{
+            &--normal{
                 h6{
                     margin-bottom: 0;
                     font-family: $font-montserrat;
@@ -78,7 +63,7 @@
                 }
             }
 
-            &--tag{
+            &--discounted{
                 h4{
                     font-family: $font-montserrat;
                     margin-bottom: 0;
@@ -98,7 +83,7 @@
             }
         }
 
-        &__members{
+        &__registrants{
             padding: 10px 15px;
             border-bottom: 1px solid #f1f1f1;
             p{
@@ -109,13 +94,226 @@
         &__values{
             padding: 30px 15px;
             p{
-                margin-bottom: 10px;
+                margin-bottom: 5px;
+
+                .mdi{
+                    font-size: 18px;
+                }
             }
         }
 
         &__action{
-            margin-top: 45px;
+            margin-top: 30px;
+        }
+
+        &--best-seller{
+            border-color: $primary;
+
+            #{ $self }__card{
+                &__name{
+                    background-color: $primary;
+                    border-color: $primary;
+                    h4{
+                        color: $white;
+                    }
+                }
+                &__price{
+                    background-color: $primary;
+                    border-color: $primary;
+
+                    &--normal{
+                        h6{
+                            color: $white;
+                        }
+                    }
+
+                    &--discounted{
+                        h4{
+                            color: $white;
+                        }
+                    }
+                }
+                &__registrants{
+                    background-color: #007fde;
+                    border-color: #007fde;
+                    p{
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            transform: translateY(-10px);
         }
     }
 
+}
+
+.php-limit{
+    table{
+        &.table{
+            tr{
+                td{
+                    p{
+                        position: relative;
+
+                        .mdi{
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: $success;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.laravel-support{
+    h5{
+        font-family: $font-montserrat;
+        font-weight: 300;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    h6{
+        margin-bottom: 10px;
+        line-height: 1.5;
+
+        .mdi{
+            font-size: 18px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.php-modules{
+    .title{
+        margin-bottom: 65px;
+    }
+
+    &__list{
+        p{
+            margin-bottom: 0;
+            font-size: 16px;
+            padding-left: 80px;
+
+            @include device(tablet){
+                padding-left: 60px;
+            }
+
+            @include device(mobile){
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+.linux-hosting{
+    .title{
+        h4{
+            font-size: 28px;
+        }
+    }
+}
+
+.share{
+    padding: 25px;
+    background-color: #f7f7f7;
+
+    &__caption{
+        font-weight: 400;
+        color: #303030;
+        margin-bottom: 0;
+    }
+
+    &__socials{
+        display: flex;
+        &__item{
+            display: flex;
+            margin-right: 10px;
+            transition: all 0.3s ease-in-out;
+
+            &__icon{
+                margin-right: 5px;
+                img{
+                    height: 33px;
+                    width: auto;
+                }
+            }
+
+            &__counter{
+                min-width: 60px;
+                height: 33px;
+                border-radius: 0.25rem;
+                position: relative;
+                border: 1px solid #cdcdcd;
+                text-align: center;
+                color: #96969d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                background-color: #f7f7f7;
+
+                &:before{
+                    position: absolute;
+                    content: "";
+                    left: -5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 5px 5px 5px 0;
+                    border-color: transparent #f7f7f7 transparent transparent;
+                    z-index: 1;
+                }
+                &:after{
+                    position: absolute;
+                    content: "";
+                    left: -6px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 6px 6px 6px 0;
+                    border-color: transparent #cdcdcd transparent transparent;
+                }
+
+                h6{
+                    margin-bottom: 0;
+                }
+            }
+
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+.cta{
+    padding: 60px 0;
+    background-color: #00a2f3;
+    color: $white;
+    &__caption{
+        font-family: $font-montserrat;
+        margin-bottom: 0;
+        padding: 5px 0;
+
+        a{
+            color: $white;
+        }
+    }
+
+    .border-right{
+        border-color: #00b3fd !important;
+    }
 }

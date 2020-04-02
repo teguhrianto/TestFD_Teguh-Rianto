@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-collapse" aria-controls="main-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                    <span class="mdi mdi-menu"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="main-nav-collapse">
@@ -12,7 +12,7 @@
                         <li class="nav-item">
                             <div class="nav-item__news">
                                 <div class="nav-item__news__ribbon">
-                                    <i class="fas fa-tag"></i>
+                                    <span class="mdi mdi-tag"></span>
                                 </div>
                                 <a href="javascript:void(0)" class="nav-item__news__link">
                                     Gratis Ebook 9 Cara Cerdas Menggunakan Domain
@@ -25,18 +25,18 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i class="fas fa-phone"></i> 0274-5305505
+                            <a href="tel:02745305505" class="nav-link">
+                                <span class="mdi mdi-phone"></span> 0274-5305505
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="javascript:void(0)" class="nav-link">
-                                <i class="fas fa-comments"></i> Live Chat
+                                <span class="mdi mdi-forum"></span> Live Chat
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="javascript:void(0)" class="nav-link nav-link--member">
-                                <i class="fas fa-user-circle"></i> Member Area
+                                <span class="mdi mdi-account-circle"></span> Member Area
                             </a>
                         </li>
                     </ul>
@@ -53,7 +53,7 @@
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-collapse" aria-controls="main-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                    <span class="mdi mdi-menu"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="main-nav-collapse">
