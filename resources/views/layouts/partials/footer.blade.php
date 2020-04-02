@@ -227,7 +227,9 @@
                 </div>
                 <div class="col-md-auto ml-auto">
                     <p>
-                        <a href="javascript:void(0)">Syarat dan Ketentuan</a> | <a href="javascript:void(0)">Kebijakan Privasi</a>
+                        <small>
+                            <a href="javascript:void(0)">Syarat dan Ketentuan</a> | <a href="javascript:void(0)">Kebijakan Privasi</a>
+                        </small>
                     </p>
                 </div>
             </div>

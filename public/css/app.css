@@ -37505,6 +37505,10 @@ h6 {
   margin-right: 25px;
 }
 
+.btn.btn-outline-light:hover {
+  color: #008fee;
+}
+
 table.table tr td,
 table.table tr th {
   padding: 10px 20px;
