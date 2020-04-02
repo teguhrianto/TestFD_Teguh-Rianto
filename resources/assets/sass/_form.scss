@@ -1,0 +1,23 @@
+.form-control{
+    box-shadow: none;
+    color: $default-text;
+    font-weight: 300;
+    font-family: $font-montserrat;
+
+    &:focus{
+        box-shadow: none;
+    }
+
+    &::-webkit-input-placeholder {
+        color: #a7aaab !important;
+    }
+    &::-moz-placeholder {
+        color: #a7aaab !important;
+    }
+    &::-ms-placeholder {
+        color: #a7aaab !important;
+    }
+    &::placeholder {
+        color: #a7aaab !important;
+    }
+}

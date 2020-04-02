@@ -2,6 +2,8 @@
 @import '../fonts/roboto/roboto';
 @import '../fonts/montserrat/montserrat';
 @import '~@mdi/font/scss/materialdesignicons';
+@import '~@fortawesome/fontawesome-free/css/brands';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 // Variables
 @import './variables';
@@ -14,8 +16,10 @@
 @import './typography';
 @import './button';
 @import './table';
+@import './form';
 @import './global';
 @import './header';
 @import './features';
 @import './page-home';
+@import './footer';
 @import './utilities';

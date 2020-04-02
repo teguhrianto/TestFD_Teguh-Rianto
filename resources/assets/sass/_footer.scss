@@ -1,0 +1,121 @@
+.footer{
+    background-color: #303030;
+    color: #d8d8d8;
+    line-height: 2;
+
+    a{
+        color: #d8d8d8;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    &__top{
+        padding-top: 60px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #292929;
+    }
+
+    &__bottom{
+        padding: 30px 0;
+    }
+
+    &__widget{
+        margin-bottom: 70px;
+        &__title{
+            font-family: $font-montserrat;
+            font-weight: 700;
+            font-size: 14px;
+            color: #8e8e8e;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                display: block;
+            }
+        }
+
+        &__newsletter{
+            .form-group{
+                margin-bottom: 5px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                background-color: $white;
+                padding: 5px;
+                border-radius: 30px;
+                overflow: hidden;
+
+                .form-control{
+                    border: none;
+                    flex: 1 1 0%;
+                    min-width: 0;
+
+                    &:focus{
+                        border: none;
+                    }
+                }
+
+                .btn{
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    padding: 10px 7px;
+                }
+
+            }
+        }
+
+        &__help-text{
+            color: #6e6e6e;
+            line-height: 1.2;
+        }
+
+        &__socials{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                flex: 0 0 50px;
+                border: 2px solid $white;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                font-size: 18px;
+                margin: 5px;
+
+                &:hover{
+                    background-color: $white;
+                    border-color: $primary;
+                    color: $primary;
+                }
+            }
+        }
+
+        &__payments{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &__item{
+                margin-right: 10px;
+                margin-bottom: 10px;
+
+                img{
+                    height: 38px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
