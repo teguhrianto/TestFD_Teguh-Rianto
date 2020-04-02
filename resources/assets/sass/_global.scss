@@ -1,0 +1,48 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: $default-text;
+    background-color: $body-bg;
+}
+
+*{
+    outline: none;
+}
+
+a{
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover, &:active{
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.container{
+    max-width: 1110px;
+}
+
+section{
+    padding: 50px 0;
+    position: relative;
+}
+
+
+.title{
+    margin-bottom: 30px;
+    text-align: center;
+
+    h3{
+        font-family: $font-montserrat;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    h4{
+        font-family: $font-montserrat;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+}

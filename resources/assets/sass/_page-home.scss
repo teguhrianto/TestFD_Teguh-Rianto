@@ -1,0 +1,121 @@
+.hero{
+    &__caption{
+        h1{
+            font-family: $font-montserrat;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-weight: 400;
+            font-size: 34px;
+            margin-bottom: 34px;
+        }
+
+        h6{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+
+            i{
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.features{
+    &__item{
+        text-align: center;
+        &__img{
+            height: 160px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.packages{
+    .title{
+        margin-bottom: 70px;
+        h3{
+            margin-bottom: 10px;
+        }
+        h4{
+            font-size: 24px;
+        }
+    }
+
+    &__card{
+        border-color: #f1f1f1;
+        text-align: center;
+
+        &__name{
+            padding: 10px 15px;
+            border-bottom: 1px solid #f1f1f1;
+
+            h4{
+                font-family: $font-montserrat;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+        }
+
+        &__price{
+            padding: 15px;
+            border-bottom: 1px solid #f1f1f1;
+            &--discount{
+                h6{
+                    margin-bottom: 0;
+                    font-family: $font-montserrat;
+                    text-decoration: line-through;
+                }
+            }
+
+            &--tag{
+                h4{
+                    font-family: $font-montserrat;
+                    margin-bottom: 0;
+                    sup{
+                        top: -1.5em;
+                        font-size: 16px;
+                        font-weight: normal;
+                        margin-right: 10px;
+
+                        strong{
+                            font-weight: 700;
+                        }
+                    }
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__members{
+            padding: 10px 15px;
+            border-bottom: 1px solid #f1f1f1;
+            p{
+                margin-bottom: 0;
+            }
+        }
+
+        &__values{
+            padding: 30px 15px;
+            p{
+                margin-bottom: 10px;
+            }
+        }
+
+        &__action{
+            margin-top: 45px;
+        }
+    }
+
+}
