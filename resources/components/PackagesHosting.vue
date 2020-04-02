@@ -9,6 +9,9 @@
             </div>
             <div class="col-lg-3 col-md-6" v-else v-for="(item, index) in packages" :key="index">
                 <div class="card packages__card" :class="{ 'packages__card--best-seller' : item.bestSeller == true}">
+                    <div class="packages__card__ribbon" v-if="item.bestSeller == true">
+                        <span>Best Seller!</span>
+                    </div>
                     <div class="packages__card__name">
                         <h4>{{ item.name }}</h4>
                     </div>

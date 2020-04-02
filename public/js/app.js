@@ -1951,6 +1951,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'PackageHosting',
   data: function data() {
@@ -37384,6 +37387,14 @@ var render = function() {
                           }
                         },
                         [
+                          item.bestSeller == true
+                            ? _c(
+                                "div",
+                                { staticClass: "packages__card__ribbon" },
+                                [_c("span", [_vm._v("Best Seller!")])]
+                              )
+                            : _vm._e(),
+                          _vm._v(" "),
                           _c("div", { staticClass: "packages__card__name" }, [
                             _c("h4", [_vm._v(_vm._s(item.name))])
                           ]),

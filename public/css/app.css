@@ -37850,6 +37850,56 @@ section.separator:after {
   border-color: #f1f1f1;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.packages__card__ribbon {
+  width: 115px;
+  height: 115px;
+  overflow: hidden;
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  z-index: 2;
+}
+
+.packages__card__ribbon:before,
+.packages__card__ribbon:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #007933;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.packages__card__ribbon:before {
+  top: 0;
+  right: 0;
+}
+
+.packages__card__ribbon:after {
+  bottom: 0;
+  left: 0;
+}
+
+.packages__card__ribbon span {
+  position: absolute;
+  display: block;
+  width: 165px;
+  padding: 10px 0;
+  background-color: #00b348;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  right: -12px;
+  top: 20px;
+  transform: rotate(-45deg);
 }
 
 .packages__card__name {
