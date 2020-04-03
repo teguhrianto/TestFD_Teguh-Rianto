@@ -49,7 +49,7 @@
             <div class="container">
                 <!-- Navbar Brand -->
                 <a href="index.php" class="navbar-brand">
-                    <img src="{{ asset('assets/img/logo.png') }}" alt="">
+                    <img src="/assets/img/logo.png" alt="">
                 </a>
 
                 <div class="navbar__nav-mobile">
