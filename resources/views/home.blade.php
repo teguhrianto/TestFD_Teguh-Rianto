@@ -5,26 +5,26 @@
 @section('content')
 <section class="hero border-bottom">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-center">
             <div class="col-lg-6">
                 <div class="hero__caption">
                     <h1>PHP Hosting</h1>
                     <h2>Cepat, handal, penuh dengan modul PHP yang Anda butuhkan</h2>
                     <h6>
-                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> Solusi PHP untuk performa query yang lebih cepat.
+                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> <span>Solusi PHP untuk performa query yang lebih cepat.</span>
                     </h6>
                     <h6>
-                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> Konsumsi memori yang lebih rendah.
+                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> <span>Konsumsi memori yang lebih rendah.</span>
                     </h6>
                     <h6>
-                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 5.6, PHP 7.
+                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> <span>Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 5.6, PHP 7.</span>
                     </h6>
                     <h6>
-                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> Fitur Enkripsi IonCube dan Zend Guard Loaders.
+                        <span class="mdi mdi-checkbox-marked-circle text-success"></span> <span>Fitur Enkripsi IonCube dan Zend Guard Loaders.</span>
                     </h6>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-10">
                 <div class="hero__img">
                     <img src="{{ asset('assets/img/hero/illustration.svg') }}" alt="PHP Hosting" class="img-fluid">
                 </div>
@@ -36,7 +36,7 @@
 <section class="features features--type-1">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-4">
                 <div class="features__item">
                     <div class="features__item__img">
                         <img src="{{ asset('assets/img/features/zendguard.svg') }}" alt="PHP Zend Guard Loaders">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-4">
                 <div class="features__item">
                     <div class="features__item__img">
                         <img src="{{ asset('assets/img/features/composer.svg') }}" alt="PHP Composer">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-4">
                 <div class="features__item">
                     <div class="features__item__img">
                         <img src="{{ asset('assets/img/features/ioncube.svg') }}" alt="PHP IonCube Loader">
@@ -237,10 +237,14 @@
 
 <section class="laravel-support border-bottom pb-0">
     <div class="container">
-        <div class="title">
-            <h4>Mendukung Penuh Framework Laravel</h4>
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-10">
+                <div class="title">
+                    <h4>Mendukung Penuh Framework Laravel</h4>
+                </div>
+            </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-6">
                 <h5>
                     Tak perlu menggunakan dedicated server ataupun VPS
@@ -248,22 +252,29 @@
                     mendukung penuh framework favorit Anda
                 </h5>
                 <h6>
-                    <span class="mdi mdi-checkbox-marked-circle text-success"></span> Install Laravel <strong>1 klik</strong> dengan Softaculous Installer
+                    <span class="mdi mdi-checkbox-marked-circle text-success"></span>
+                    <span>Install Laravel <strong>1 klik</strong> dengan Softaculous Installer</span>
                 </h6>
                 <h6>
-                    <span class="mdi mdi-checkbox-marked-circle text-success"></span> Mendukung ekstensi <strong>PHP MCrypt, phar, mbstring, json,</strong> dan <strong>fileinfo.</strong>
+                    <span class="mdi mdi-checkbox-marked-circle text-success"></span>
+                    <span>Mendukung ekstensi <strong>PHP MCrypt, phar, mbstring, json,</strong> dan <strong>fileinfo.</strong></span>
                 </h6>
                 <h6>
-                    <span class="mdi mdi-checkbox-marked-circle text-success"></span> Tersedia <strong>Composer</strong> dan <strong>SSH</strong> untuk menginstal packages pilihan Anda.
+                    <span class="mdi mdi-checkbox-marked-circle text-success"></span>
+                    <span>Tersedia <strong>Composer</strong> dan <strong>SSH</strong> untuk menginstal packages pilihan Anda.</span>
                 </h6>
                 <p class="pt-2 mb-4">
                     <small>Nb. Composer dan SSH hanya tersedia pada paket Personal dan Bisnis</small>
                 </p>
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg mb-3">
-                    Pilih Hosting Anda
-                </a>
+                <div class="row">
+                    <div class="col-md-12 text-md-left text-center">
+                        <a href="javascript:void(0)" class="btn btn-primary btn-lg mb-3">
+                            Pilih Hosting Anda
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-10">
                 <img src="{{ asset('assets/img/laravel-support.svg') }}" alt="Laravel Support" class="img-fluid">
             </div>
         </div>
@@ -272,11 +283,15 @@
 
 <section class="php-modules">
     <div class="container">
-        <div class="title">
-            <h4>Modul Lengkap Untuk Menjalankan Aplikasi PHP Anda</h4>
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-10">
+                <div class="title">
+                    <h4>Modul Lengkap Untuk Menjalankan Aplikasi PHP Anda</h4>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-3 php-modules__list">
+            <div class="col-md-3 col-6 php-modules__list">
                 <p>IcePHP</p>
                 <p>apc</p>
                 <p>apcu</p>
@@ -293,7 +308,7 @@
                 <p>crack</p>
                 <p>dba</p>
             </div>
-            <div class="col-md-3 php-modules__list">
+            <div class="col-md-3 col-6 php-modules__list">
                 <p>http</p>
                 <p>huffman</p>
                 <p>idn</p>
@@ -310,7 +325,7 @@
                 <p>json</p>
                 <p>ldap</p>
             </div>
-            <div class="col-md-3 php-modules__list">
+            <div class="col-md-3 col-6 php-modules__list">
                 <p>nd_pdo_mysql</p>
                 <p>oauth</p>
                 <p>oci8</p>
@@ -327,7 +342,7 @@
                 <p>pgsql</p>
                 <p>phalcon</p>
             </div>
-            <div class="col-md-3 php-modules__list">
+            <div class="col-md-3 col-6 php-modules__list">
                 <p>stats</p>
                 <p>stem</p>
                 <p>stomp</p>
@@ -357,7 +372,7 @@
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg-6 px-lg-4 px-3">
-                <div class="title text-left">
+                <div class="title text-md-left text-center">
                     <h4>Linux Hosting yang Stabil dengan Teknologi LVE</h4>
                 </div>
                 <h6 class="font-monserrat mb-5">
@@ -367,11 +382,15 @@
                     berbasis LiteSpeed Technologies, <strong>CageFS</strong> security, <strong>Raid-10</strong> protection
                     dan auto backup untuk keamanan website PHP Anda.
                 </h6>
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg mb-5">
-                    Pilih Hosting Anda
-                </a>
+                <div class="row">
+                    <div class="col-md-12 text-md-left text-center">
+                        <a href="javascript:void(0)" class="btn btn-primary btn-lg mb-5">
+                            Pilih Hosting Anda
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 text-center">
                 <img src="{{ asset('assets/img/support.png') }}" alt="Linux Support" class="img-fluid">
             </div>
         </div>
@@ -380,10 +399,10 @@
 <section class="share">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6">
                 <h6 class="share__caption">Bagikan jika Anda menyukai halaman ini.</h6>
             </div>
-            <div class="col-md-5 ml-auto">
+            <div class="col-lg-5 col-md-6 ml-auto">
                 <div class="share__socials">
                     <a class="share__socials__item" href="javascript:void(0)">
                         <div class="share__socials__item__icon">
@@ -417,13 +436,13 @@
 
 <section class="cta">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-9 border-right">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-9 col-md-8 border-right">
                 <h2 class="cta__caption">
                     Perlu <strong class="text-uppercase">Bantuan?</strong> Hubungi Kami : <a href="tel:02745305505"><strong>0274-5305505</strong></a>
                 </h2>
             </div>
-            <div class="col-md-auto ml-auto">
+            <div class="col-lg-auto ml-auto">
                 <a href="javascript:void(0)" class="btn btn-outline-light btn-lg btn-icon">
                     <span class="mdi mdi-forum"></span> Live Chat
                 </a>

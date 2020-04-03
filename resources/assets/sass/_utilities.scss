@@ -13,3 +13,21 @@
         color: $primary !important;
     }
 }
+
+.hide{
+    &-mobile{
+        @include device(mobile){
+            display: none !important;
+        }
+    }
+}
+
+.show{
+    &-mobile{
+        display: none;
+
+        @include device(mobile){
+            display: block !important;
+        }
+    }
+}

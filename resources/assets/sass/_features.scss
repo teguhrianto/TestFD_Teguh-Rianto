@@ -14,6 +14,10 @@
                 justify-content: center;
                 align-items: center;
 
+                @include device(mobile){
+                    height: auto;
+                }
+
                 img{
                     max-width: 100%;
                     height: auto;

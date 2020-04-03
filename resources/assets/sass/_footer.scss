@@ -3,6 +3,10 @@
     color: #d8d8d8;
     line-height: 2;
 
+    @include device(mobile){
+        text-align: center;
+    }
+
     a{
         color: #d8d8d8;
 
@@ -81,6 +85,14 @@
             align-items: center;
             justify-content: space-between;
 
+            @include device(tablet){
+                justify-content: flex-start;
+            }
+
+            @include device(mobile){
+                justify-content: center;
+            }
+
             a{
                 width: 50px;
                 height: 50px;
@@ -92,7 +104,7 @@
                 align-items: center;
                 color: $white;
                 font-size: 18px;
-                margin: 5px;
+                margin: 5px 10px;
 
                 &:hover{
                     background-color: $white;
@@ -106,6 +118,10 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap;
+
+            @include device(mobile){
+                justify-content: center;
+            }
 
             &__item{
                 margin-right: 10px;

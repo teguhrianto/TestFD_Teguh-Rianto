@@ -14,7 +14,7 @@
         h6{
             margin-bottom: 15px;
             display: flex;
-            align-items: center;
+            align-items: baseline;
 
             i, .mdi{
                 margin-right: 10px;
@@ -41,6 +41,14 @@
         text-align: center;
         transition: all 0.3s ease-in-out;
         position: relative;
+
+        @include device(tablet){
+            margin-bottom: 30px;
+        }
+
+        @include device(mobile){
+            margin-bottom: 30px;
+        }
 
         &__ribbon {
             width: 115px;
@@ -234,6 +242,8 @@
     h6{
         margin-bottom: 10px;
         line-height: 1.5;
+        display: flex;
+        align-items: baseline;
 
         .mdi{
             font-size: 18px;
@@ -254,7 +264,7 @@
             padding-left: 80px;
 
             @include device(tablet){
-                padding-left: 60px;
+                padding-left: 0;
             }
 
             @include device(mobile){
@@ -273,13 +283,17 @@
 }
 
 .share{
-    padding: 25px;
+    padding: 25px 0;
     background-color: #f7f7f7;
 
     &__caption{
         font-weight: 400;
         color: #303030;
         margin-bottom: 0;
+
+        @include device(mobile){
+            margin-bottom: 15px;
+        }
     }
 
     &__socials{
@@ -353,10 +367,27 @@
     padding: 60px 0;
     background-color: #00a2f3;
     color: $white;
+
+    @include device(tablet){
+        text-align: center;
+    }
+
+    @include device(mobile){
+        text-align: center;
+    }
+
     &__caption{
         font-family: $font-montserrat;
         margin-bottom: 0;
         padding: 5px 0;
+
+        @include device(tablet){
+            margin-bottom: 20px;
+        }
+
+        @include device(mobile){
+            margin-bottom: 20px;
+        }
 
         a{
             color: $white;
@@ -365,5 +396,13 @@
 
     .border-right{
         border-color: #00b3fd !important;
+
+        @include device(tablet){
+            border: none !important;
+        }
+
+        @include device(mobile){
+            border: none !important;
+        }
     }
 }

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer__top">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="footer__widget">
                         <h6 class="footer__widget__title">
                             Hubungi Kami
@@ -20,7 +20,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="footer__widget">
                         <h6 class="footer__widget__title">
                             Layanan
@@ -53,7 +53,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="footer__widget">
                         <h6 class="footer__widget__title">
                             Service Hosting
@@ -80,7 +80,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="footer__widget">
                         <h6 class="footer__widget__title">
                             Tutorial
@@ -98,7 +98,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="footer__widget">
                         <h6 class="footer__widget__title">
                             Tentang Kami
@@ -122,7 +122,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="footer__widget">
                         <h6 class="footer__widget__title">
                             Kenapa Pilih Niagahoster
