@@ -185,31 +185,31 @@
                         </h6>
                         <div class="footer__widget__payments">
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/bca.svg') }}" alt="BCA">
+                                <img src="/assets/img/banks/bca.svg" alt="BCA">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/mandiriclickpay.svg') }}" alt="Mandiri Clickpay">
+                                <img src="/assets/img/banks/mandiriclickpay.svg" alt="Mandiri Clickpay">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/bni.svg') }}" alt="BNI">
+                                <img src="/assets/img/banks/bni.svg" alt="BNI">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/visa.svg') }}" alt="Visa">
+                                <img src="/assets/img/banks/visa.svg" alt="Visa">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/mastercard.svg') }}" alt="Mastercard">
+                                <img src="/assets/img/banks/mastercard.svg" alt="Mastercard">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/atmbersama.svg') }}" alt="ATM Bersama">
+                                <img src="/assets/img/banks/atmbersama.svg" alt="ATM Bersama">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/permatabank.svg') }}" alt="Permata Bank">
+                                <img src="/assets/img/banks/permatabank.svg" alt="Permata Bank">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/prima.svg') }}" alt="Prima">
+                                <img src="/assets/img/banks/prima.svg" alt="Prima">
                             </div>
                             <div class="footer__widget__payments__item">
-                                <img src="{{ asset('assets/img/banks/alto.svg') }}" alt="Alto">
+                                <img src="/assets/img/banks/alto.svg" alt="Alto">
                             </div>
                         </div>
                         <p class="footer__widget__help-text mt-2">Aktivasi instan dengan e-Payment. Hosting dan domain langsung aktif!</p>
