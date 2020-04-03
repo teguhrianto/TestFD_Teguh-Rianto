@@ -1,8 +1,8 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
-@import '~@mdi/font/scss/materialdesignicons';
-@import '~@fortawesome/fontawesome-free/css/brands';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import url('https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css');
 
 // Variables
 @import './variables';
