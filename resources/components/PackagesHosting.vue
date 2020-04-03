@@ -64,7 +64,6 @@ export default {
             .get('../data/packages_hosting.json')
             .then(response => {
                 this.packages = response.data
-                console.log(response.data)
             })
             .catch(error => {
                 console.log(error)
