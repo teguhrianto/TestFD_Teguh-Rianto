@@ -26,7 +26,7 @@
             </div>
             <div class="col-lg-6 col-md-10">
                 <div class="hero__img">
-                    <img src="{{ asset('assets/img/hero/illustration.svg') }}" alt="PHP Hosting" class="img-fluid">
+                    <img src="/assets/img/hero/illustration.svg" alt="PHP Hosting" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <div class="col-lg-3 col-md-4">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/zendguard.svg') }}" alt="PHP Zend Guard Loaders">
+                        <img src="/assets/img/features/zendguard.svg" alt="PHP Zend Guard Loaders">
                     </div>
                     <div class="features__item__caption">
                         <h6>PHP Zend Guard Loaders</h6>
@@ -49,7 +49,7 @@
             <div class="col-lg-3 col-md-4">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/composer.svg') }}" alt="PHP Composer">
+                        <img src="/assets/img/features/composer.svg" alt="PHP Composer">
                     </div>
                     <div class="features__item__caption">
                         <h6>PHP Composer</h6>
@@ -59,7 +59,7 @@
             <div class="col-lg-3 col-md-4">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/ioncube.svg') }}" alt="PHP IonCube Loader">
+                        <img src="/assets/img/features/ioncube.svg" alt="PHP IonCube Loader">
                     </div>
                     <div class="features__item__caption">
                         <h6>PHP IonCube Loader</h6>
@@ -150,7 +150,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/packages/php.svg') }}" alt="PHP Semua Versi">
+                        <img src="/assets/img/features/packages/php.svg" alt="PHP Semua Versi">
                     </div>
                     <div class="features__item__caption">
                         <h5>PHP Semua Versi</h5>
@@ -164,7 +164,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/packages/mysql.svg') }}" alt="MySQL Versi 5.6">
+                        <img src="/assets/img/features/packages/mysql.svg" alt="MySQL Versi 5.6">
                     </div>
                     <div class="features__item__caption">
                         <h5>MySQL Versi 5.6</h5>
@@ -178,7 +178,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/packages/cpanel.svg') }}" alt="Panel Hosting cPanel">
+                        <img src="/assets/img/features/packages/cpanel.svg" alt="Panel Hosting cPanel">
                     </div>
                     <div class="features__item__caption">
                         <h5>Panel Hosting cPanel</h5>
@@ -192,7 +192,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/packages/uptime.svg') }}" alt="Garansi Uptime 99.9%">
+                        <img src="/assets/img/features/packages/uptime.svg" alt="Garansi Uptime 99.9%">
                     </div>
                     <div class="features__item__caption">
                         <h5>Garansi Uptime 99.9%</h5>
@@ -206,7 +206,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/packages/innodb.svg') }}" alt="Database InnoDB Unlimited">
+                        <img src="/assets/img/features/packages/innodb.svg" alt="Database InnoDB Unlimited">
                     </div>
                     <div class="features__item__caption">
                         <h5>Database InnoDB Unlimited</h5>
@@ -220,7 +220,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="features__item">
                     <div class="features__item__img">
-                        <img src="{{ asset('assets/img/features/packages/remote.svg') }}" alt="Wildcard Remote MySQL">
+                        <img src="/assets/img/features/packages/remote.svg" alt="Wildcard Remote MySQL">
                     </div>
                     <div class="features__item__caption">
                         <h5>Wildcard Remote MySQL</h5>
@@ -275,7 +275,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-10">
-                <img src="{{ asset('assets/img/laravel-support.svg') }}" alt="Laravel Support" class="img-fluid">
+                <img src="/assets/img/laravel-support.svg" alt="Laravel Support" class="img-fluid">
             </div>
         </div>
     </div>
@@ -391,7 +391,7 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="{{ asset('assets/img/support.png') }}" alt="Linux Support" class="img-fluid">
+                <img src="/assets/img/support.png" alt="Linux Support" class="img-fluid">
             </div>
         </div>
     </div>
@@ -406,7 +406,7 @@
                 <div class="share__socials">
                     <a class="share__socials__item" href="javascript:void(0)">
                         <div class="share__socials__item__icon">
-                            <img src="{{ asset('assets/img/icons/socials/facebook.png') }}" alt="Facebook Share">
+                            <img src="/assets/img/icons/socials/facebook.png" alt="Facebook Share">
                         </div>
                         <div class="share__socials__item__counter">
                             <h6>80k</h6>
@@ -414,7 +414,7 @@
                     </a>
                     <a class="share__socials__item" href="javascript:void(0)">
                         <div class="share__socials__item__icon">
-                            <img src="{{ asset('assets/img/icons/socials/twitter.png') }}" alt="Facebook Share">
+                            <img src="/assets/img/icons/socials/twitter.png" alt="Facebook Share">
                         </div>
                         <div class="share__socials__item__counter">
                             <h6>450</h6>
@@ -422,7 +422,7 @@
                     </a>
                     <a class="share__socials__item" href="javascript:void(0)">
                         <div class="share__socials__item__icon">
-                            <img src="{{ asset('assets/img/icons/socials/gplus.png') }}" alt="Facebook Share">
+                            <img src="/assets/img/icons/socials/gplus.png" alt="Facebook Share">
                         </div>
                         <div class="share__socials__item__counter">
                             <h6>1900</h6>
